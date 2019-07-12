@@ -1,13 +1,86 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class='page_row' bindtap="suo">   
+ <view class="search">      
+ <view class="df search_arr">        
+ <icon class="searchcion" size='20' type='search'></icon>        
+ <input class="" disabled placeholder="" value="{{searchValue}}"/>      
+ </view>    
+ </view>    
+ <view class='sousuo'>搜索</view>  
+ </view>
+ <view class="hot_search">
+  <text class="word">热搜：</text>
+  <input class='hot' value='MAC口红'></input>
+  <input class='hot' value='sk2神仙水'></input>
+  <input class='hot' value='GUCCI'></input>
+  <input class='hot' value='眼影'></input>
 </view>
+<view>
+  <swiper class="swiper" autoplay="true" interval="2000" >
+    <swiper-item>
+      <image src="https://www.lorealparis.com.cn/images/markup/banner/0701/pc1.png"mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://www.lorealparis.com.cn/images/markup/banner/0701/pc2.png"mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://www.lorealparis.com.cn/images/markup/banner/0701/pc3.png"mode="aspectFill"></image>
+    </swiper-item>
+ 
+  </swiper>
+ 
+</view>
+
+<view>
+  <image class="image_frame" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3992812583,953930145&fm=11&gp=0.jpg" mode="aspectFill">  
+</image>  
+</view>
+<view >
+    <view class="flex-row" style="display: flex;flex-direction: row;">
+ <button class='btn1' open-type='contact'>
+    <image class='btnImg' src='../../images/hot.png'></image>
+    <view>热门</view>
+ </button>
+ <button class='btn2' open-type='contact'>
+    <image class='btnImg' src='../../images/kh.png'></image>
+    <view>口红</view>
+ </button>
+ <button class='btn3' open-type='contact'>
+    <image class='btnImg' src='../../images/yy.png'></image>
+    <view>眼影</view>
+ </button>
+ <button class='btn4' open-type='contact'>
+    <image class='btnImg' src='../../images/czd.png'></image>
+    <view>彩妆蛋</view>
+ </button>
+ <button class='btn5' open-type='contact'>
+    <image class='btnImg' src='../../images/mm.png'></image>
+    <view>面膜</view>
+ </button>
+</view>
+</view>
+<view >
+    <view class="flex-row" style="display: flex;flex-direction: row;">
+ <button class='btn6' open-type='contact'>
+    <image class='btnImg' src='../../images/jms.png'></image>
+    <view>睫毛刷</view>
+ </button>
+ <button class='btn7' open-type='contact'>
+    <image class='btnImg' src='../../images/xmn.png'></image>
+    <view>洗面奶</view>
+ </button>
+ <button class='btn8' open-type='contact'>
+    <image class='btnImg' src='../../images/xs.png'></image>
+    <view>香水</view>
+ </button>
+ <button class='btn9' open-type='contact'>
+    <image class='btnImg' src='../../images/fs.png'></image>
+    <view>粉刷</view>
+ </button>
+ <button class='btn10' open-type='contact'>
+    <image class='btnImg' src='../../images/hfs.png'></image>
+    <view>护肤霜</view>
+ </button>
+</view>
+</view>
+<image class='shangp' src='../../images/1.jpg'></image>
