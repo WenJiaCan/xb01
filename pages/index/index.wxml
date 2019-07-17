@@ -3,18 +3,10 @@
  <view class="search">      
  <view class="df search_arr">        
  <icon class="searchcion" size='20' type='search'></icon>        
- <input class="" disabled placeholder="" value="{{searchValue}}"/>      
+ <input class="" disabled placeholder="搜索商品" placeholder-class = "center" placeholder-style = "color:#000" value="{{searchValue}}"/>      
  </view>    
- </view>    
- <view class='sousuo'>搜索</view>  
+ </view>     
  </view>
- <view class="hot_search">
-  <text class="word">热搜：</text>
-  <input class='hot' value='MAC口红'></input>
-  <input class='hot' value='sk2神仙水'></input>
-  <input class='hot' value='GUCCI'></input>
-  <input class='hot' value='眼影'></input>
-</view>
 <view>
   <swiper class="swiper" autoplay="true" interval="2000" >
     <swiper-item>
@@ -32,7 +24,7 @@
 </view>
 
 <view>
-  <image class="image_frame" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3992812583,953930145&fm=11&gp=0.jpg" mode="aspectFill">  
+  <image bindtap='bindTap' class="image_frame" src="../../images/saomiao.jpg" mode="aspectFill">  
 </image>  
 </view>
 <view >

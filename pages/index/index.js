@@ -9,6 +9,11 @@ Page({
     wx.navigateTo({
       url: '../logs/logs',
     })
+  },
+  bindTap: function () {
+    wx.navigateTo({
+      url: '../camera/camera',
+    })
   }
   //搜索框
   /*suo: function (e) {

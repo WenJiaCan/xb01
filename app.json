@@ -4,17 +4,19 @@
     "pages/my/my",
     "pages/recommend/recommend",
     "pages/car/car",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/camera/camera"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "首页",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
+    "backgroundColor": "#000000",
     "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
+    "selectedColor": "#FFF",
     "borderStyle": "white",
     "list": [
       {
